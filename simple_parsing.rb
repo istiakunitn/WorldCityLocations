@@ -1,5 +1,6 @@
 require 'csv'
 CSV_FILE_PATH = File.join(File.dirname(__FILE__), 'World_Cities_Location_table.csv')
+OUTPUT_FILE_PATH = File.join(File.dirname(__FILE__), 'simple_parsing.txt')
 
 highest_cities_of_countries = {}
 
@@ -24,8 +25,12 @@ CSV.foreach(CSV_FILE_PATH, {:col_sep => ';'}) do |line|
   end
 end
 
+output_file = File.open(OUTPUT_FILE_PATH, 'w')
+
 highest_cities_of_countries.values.sort {|left, right|
   right.altitude <=> left.altitude
 }.each do |city|
-  puts "#{city.altitude}m - #{city.name}, #{city.country}"
+  line = "#{city.altitude}m - #{city.name}, #{city.country}"
+  puts line
+  output_file.puts(line)
 end

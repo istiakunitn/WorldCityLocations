@@ -86,6 +86,10 @@ describe WorldCitiesLocation::Parser do
     end
   end
 
+  describe '#lowest_cities_of_countries' do
+    it 'should return array of lowest cities of each country'
+  end
+
   describe  '#find_or_create_city' do
     it 'should find a city when it is existed' do
       parser.parse

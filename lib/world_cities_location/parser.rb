@@ -101,6 +101,28 @@ module WorldCitiesLocation
       }
     end
 
+    # This method will pick the +WorldCitiesLocation::City+ with lowest altitude
+    # for each +WorldCitiesLocation::Country+ while looping through each line of CSV
+    #
+    # This method will return an array of +WorldCitiesLocation::City+
+    #
+    # @return [WorldCitiesLocation::City]
+    def lowest_cities_of_countries
+      lowest_cities_of_countries = {}
+      parse do |city|
+        if lowest_cities_of_countries[city.country.name].nil?
+          lowest_cities_of_countries[city.country.name] = city
+        else
+          if city.altitude < lowest_cities_of_countries[city.country.name].altitude
+            lowest_cities_of_countries[city.country.name] = city
+          end
+        end
+      end
+      lowest_cities_of_countries.values.sort { |left, right|
+        left.altitude <=> right.altitude
+      }
+    end
+
     private
     def find_or_create_city(country, attributes = {})
       attributes.merge!(country: country)

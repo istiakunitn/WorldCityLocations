@@ -1,3 +1,43 @@
+Parsing World City Locations Database
+===============================
+I have implemented the parsing in two approach
+
+* First approach is simple using of ruby CSV interface.
+* Second approach is object oriented way on top ruby CSV interface.
+
+
+Running parsing ruby scripts
+================================
+* From the project root directory first run
+
+```
+$ bundle
+```
+
+* Run following command to get output from First approach
+
+```
+$ ruby simple_parsing.rb
+```
+
+* Run following command to get output from Second approach
+
+```
+$ ruby oo_parsing.rb
+```
+
+* Run following command to run test
+
+```
+$ rspec test/unit --format documentation
+```
+
+Why second approach?
+===============================
+* To be modular and will be able to reuse code in other projects by publishing a gem
+* Will be able to implement new features easily. For example check Parser#lowest_cities_of_countries
+
+
 World City Locations Database
 ===============================
 

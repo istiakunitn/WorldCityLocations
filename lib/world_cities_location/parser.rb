@@ -2,8 +2,7 @@ require 'csv'
 
 module WorldCitiesLocation
   class Parser
-    attr_accessor :csv_file_path, :csv_file_options, :cities
-    protected :cities
+    attr_accessor :csv_file_path, :csv_file_options, :countries
 
     #
     # Construct a new +WorldCitiesLocation::Parser+ using the +options+ Hash.
@@ -29,7 +28,7 @@ module WorldCitiesLocation
 
       @csv_file_path = options[:csv_file_path]
       @csv_file_options = options.fetch(:csv_file_options, {})
-      @cities = nil
+      @countries = nil
     end
 
     #
@@ -47,8 +46,8 @@ module WorldCitiesLocation
     #
     # @return [WorldCitiesLocation::Country]
     def parse
-      if @cities.nil?
-        @cities = []
+      if @countries.nil?
+        @countries = []
         CSV.foreach(csv_file_path, csv_file_options) do |line|
 
           # line[0] is id
@@ -58,25 +57,25 @@ module WorldCitiesLocation
           # line[4] is longitude
           # line[5] is altitude
 
-          city = find_or_create_city({
-                                         id: line[0],
-                                         name: line[2],
-                                         latitude: line[3].to_f,
-                                         longitude: line[4].to_f,
-                                         altitude: line[5].to_f,
-                                         country: line[1]
-                                     })
+          country = find_or_create_country(line[1])
+          city = find_or_create_city(country, {
+                                                id: line[0],
+                                                name: line[2],
+                                                latitude: line[3].to_f,
+                                                longitude: line[4].to_f,
+                                                altitude: line[5].to_f,
+                                            })
           if block_given?
             yield city
           end
         end
       else
-        @cities.each do |city|
+        @countries.map(&:cities).flatten.each do |city|
           yield city
         end if block_given?
       end
 
-      @cities
+      @countries
     end
 
     #
@@ -89,11 +88,11 @@ module WorldCitiesLocation
     def highest_cities_of_countries
       highest_cities_of_countries = {}
       parse do |city|
-        if highest_cities_of_countries[city.country].nil?
-          highest_cities_of_countries[city.country] = city
+        if highest_cities_of_countries[city.country.name].nil?
+          highest_cities_of_countries[city.country.name] = city
         else
-          if city.altitude > highest_cities_of_countries[city.country].altitude
-            highest_cities_of_countries[city.country] = city
+          if city.altitude > highest_cities_of_countries[city.country.name].altitude
+            highest_cities_of_countries[city.country.name] = city
           end
         end
       end
@@ -103,14 +102,23 @@ module WorldCitiesLocation
     end
 
     private
-    def find_or_create_city(attributes = {})
-      city = cities.detect { |city| city.id == attributes[:id] }
+    def find_or_create_city(country, attributes = {})
+      attributes.merge!(country: country)
+      city = country.cities.detect { |city| city.id == attributes[:id] }
       if city.nil?
         city = City.new(attributes)
-        @cities << city
+        country.cities << city
       end
       city
     end
+
+    def find_or_create_country(name)
+      country = @countries.detect { |country| country.name == name }
+      if country.nil?
+        country = Country.new(name: name)
+        @countries << country
+      end
+      country
+    end
   end
 end
-

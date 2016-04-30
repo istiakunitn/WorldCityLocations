@@ -10,7 +10,7 @@ highest_cities_of_countries = parser.highest_cities_of_countries
 output_file = File.open(OUTPUT_FILE_PATH, 'w')
 
 highest_cities_of_countries.each do |city|
-  line = "#{city.altitude}m - #{city.name}, #{city.country}"
+  line = "#{city.altitude}m - #{city.name}, #{city.country.name}"
   puts line
   output_file.puts(line)
 end

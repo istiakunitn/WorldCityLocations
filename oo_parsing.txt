@@ -1,0 +1,155 @@
+4824.0m - Santa Barbara, Bolivia
+4363.0m - Cerro de Pasco, Peru
+4302.0m - Margherita, Uganda
+4290.0m - Dorufchah, Afghanistan
+4124.0m - Banos, Ecuador
+3932.0m - San Antonio de los Cobres, Argentina
+3641.0m - Murghob, Tajikistan
+3279.0m - Porgera, Papua New Guinea
+3187.0m - Kodari, Nepa
+3056.0m - Ha, Bhutan
+2954.0m - Ipiales, Colombi
+2853.0m - Fiche, Ethiopia
+2694.0m - Huixquilucan, Mexico
+2623.0m - Yarim, Yemen
+2582.0m - San Francisco El Alto, Guatemala
+2534.0m - Molo, Kenya
+2394.0m - Dayan, China
+2360.0m - Asmara, Eritrea
+2248.0m - Calama, Chile
+2230.0m - Pas de la Casa, Andorra
+2224.0m - Cerro Punta, Panama
+2197.0m - Bayanhongor, Monaco
+2167.0m - Karanlukh, Armenia
+2163.0m - Mucumpiz, Venezuela
+2085.0m - Nuwara Eliya, Sri Lanka
+2061.0m - Shahr-e Kord, Iran
+1957.0m - Malbun, Liechtenstein
+1952.0m - Shatili, Georgia
+1913.0m - Erzurum, Turkey
+1842.0m - Cot, Costa Rica
+1829.0m - Colorado Springs, United States
+1824.0m - Faratsiho, Malawi
+1776.0m - Erigavo, Somalia
+1775.0m - Johannesburg, South Africa
+1771.0m - Kumbo, Cameroon
+1769.0m - Caluquembe, Angola
+1769.0m - Sumbawanga, Tanzania
+1759.0m - Dedza, Malaysia
+1738.0m - Nyanga, Zimbabwe
+1721.0m - La Esperanza, Honduras
+1671.0m - Quetta, Pakistan
+1622.0m - Mbala, Zambia
+1570.0m - Falam, Myanmar
+1555.0m - Srinagar, India
+1509.0m - Azrou, Morocco
+1473.0m - Gadabay, Azerbaijan
+1464.0m - Da Lat, Vietnam
+1460.0m - Sungjibaegam, Norway
+1448.0m - Baguio, Philippines
+1426.0m - At Tayyibah, Jordan
+1396.0m - Darkton, Swaziland
+1372.0m - Aflou, Algeria
+1367.0m - Yabrud, Syria
+1328.0m - Kurte, Albania
+1325.0m - Kenscoff, Haiti
+1289.0m - Lichinga, Mozambique
+1286.0m - Tekeli, Kazakhstan
+1256.0m - Penjwin, Iraq
+1250.0m - Lembang, Indonesia
+1220.0m - Baalbek, Lebanon
+1208.0m - Jos, Niger
+1206.0m - Kyperounda, Cyprus
+1196.0m - Concepcion de Ataco, El Salvador
+1177.0m - Krushevo, Macedonia
+1172.0m - San Rafael del Norte, Nicaragua
+1131.0m - Smolyan, Bulgaria
+1128.0m - Kutum, Sudan
+1092.0m - Brasilia, Brazil
+1081.0m - Airdrie, Canada
+1075.0m - Aozou, Chad
+1047.0m - Bouar, Central African Republic
+1036.0m - Einsiedeln, Switzerland
+1019.0m - Vares, Bosnia and Herzegovina
+1014.0m - Armidale, Australia
+976.0m - Fogasavaii, Samoa
+969.0m - Thala, Tunisia
+946.0m - Zell am See, Austria
+935.0m - Beit Jann, Israel
+887.0m - Mavis Bank, Jamaica
+874.0m - Ouzini, Comoros
+873.0m - Chita, Russia
+861.0m - Burgos, Spain
+833.0m - Mbigou, Gabon
+823.0m - Lupeni, Romania
+821.0m - Waiouru, New Zealand
+815.0m - Sequeira, Portugal
+786.0m - Koroska-Bela, Slovenia
+741.0m - `Arta, Djibouti
+735.0m - Taebaek, Korea, South
+734.0m - Senmonourom, Cambodia
+717.0m - Kozani, Greece
+700.0m - Yafran, Libya
+700.0m - Delnice, Croatia
+698.0m - Potenza, Italy
+684.0m - Yanqul, Oman
+646.0m - Acurenam, Equatorial Guinea
+598.0m - Saint-Etienne, France
+590.0m - Matsumoto, Japan
+585.0m - New Yekepa, Liberia
+582.0m - Bruntal, Czech Republic
+579.0m - Kiruna, Sweden
+537.0m - Alarsas, Nigeria
+515.0m - Muenchen, Germany
+513.0m - Capitan Bado, Paraguay
+489.0m - Amlame, Togo
+485.0m - Hosingen, Luxembourg
+465.0m - Bembereke, Benin
+465.0m - Walbrzych, Poland
+457.0m - Kidal, Malta
+456.0m - Rio Guayabal de Yateras, Cuba
+448.0m - Begoro, Ghana
+430.0m - Nouvelle France, Mauritius
+420.0m - Ban Mae Chan, Thailand
+389.0m - Keningau, Maldives
+385.0m - Arlon, Belgium
+346.0m - Paradsasvar, Hungary
+338.0m - Assomada, Cape Verde
+314.0m - Sudureyri, Iceland
+304.0m - Santa Clara de Olimar, Uruguay
+296.0m - Drogobych, Ukraine
+292.0m - Navahrudak, Belarus
+290.0m - Toynim, Micronesia
+262.0m - Kuusamo, Finland
+235.0m - Dunlewy, Ireland
+230.0m - Svencionys, Lithuania
+228.0m - Briceni, Moldova
+219.0m - Blackmans, Barbados
+198.0m - Aluksne, Latvia
+190.0m - Chateaubelair, Saint Kitts and Nevis
+188.0m - Halifax, United Kingdom
+174.0m - Al Wafrah, Kuwait
+160.0m - Kerkrade, Netherlands
+158.0m - Auki, Solomon Islands
+151.0m - Otepaa, Estonia
+145.0m - Sauteurs, Grenada
+137.0m - Sao Tome, Sao Tome and Principe
+130.0m - Benque Viejo del Carmen, Belize
+105.0m - Benzdorp (Monte Hermon), Suriname
+101.0m - Thies Nones, Senegal
+94.0m - Lethem, Guyana
+77.0m - Ikast, Denmark
+75.0m - Barkewol, Mauritania
+60.0m - Sun Kunda, Gambia, The
+59.0m - Panchagarh, Bangladesh
+47.0m - Umm Bab, Qatar
+45.0m - Bangar, Brunei
+20.0m - Imeong, Palau
+13.0m - Al Muharraq, Bahrain
+11.0m - `Ohonua, Tonga
+2.0m - Nandi, Fiji
+1.0m - Tarawa, Kiribati
+1.0m - Majuro, Marshall Islands
+1.0m - Hithadhoo, Mali
+-9999.0m - Victoria, Seychelles
+-9999.0m - Funafuti, Tuvalu

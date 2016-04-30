@@ -14,13 +14,14 @@ Running parsing ruby scripts
 $ bundle
 ```
 
-* Run following command to get output from First approach
+* Run following command to get output from First approach. Output will be printed in the STDOUT and also into simple_parsing.txt file (created in the project folder).
 
 ```
 $ ruby simple_parsing.rb
 ```
 
-* Run following command to get output from Second approach
+* Run following command to get output from Second approach. Output will be printed in the STDOUT and also into oo_parsing.txt file (created in the project folder).
+
 
 ```
 $ ruby oo_parsing.rb

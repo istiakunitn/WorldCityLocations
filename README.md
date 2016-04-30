@@ -36,7 +36,7 @@ $ rspec test/unit --format documentation
 Why second approach?
 ===============================
 * To be modular and will be able to reuse code in other projects by publishing a gem
-* Will be able to implement new features easily. For example check Parser#lowest_cities_of_countries
+* Will be able to implement new features easily. For example check [Parser#lowest_cities_of_countries] (https://github.com/raihan2006i/WorldCityLocations/blob/parsing/lib/world_cities_location/parser.rb#L110)
 
 
 World City Locations Database

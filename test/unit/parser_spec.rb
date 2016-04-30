@@ -18,11 +18,14 @@ describe WorldCitiesLocation::Parser do
   let(:countries_highest_city){
     {
         'Afghanistan' => 'Kabul',
-        'Albania' => 'Elbasan',
+        'Andorra' => 'les Escaldes',
         'Algeria' => 'Constantine',
         'United States' => 'Chicago',
-        'Andorra' => 'les Escaldes'
+        'Albania' => 'Elbasan',
     }
+  }
+  let(:countries_highest_cities){
+    countries_highest_city.values
   }
   let(:total_cities) {
     countries_cities.collect{|country, cities| cities.count }.inject(:+)
@@ -83,6 +86,12 @@ describe WorldCitiesLocation::Parser do
         expect(countries_highest_city[city.country.name]).to eq(city.name)
         expect(city).to be_a(WorldCitiesLocation::City)
       end
+    end
+
+    it 'should return array of highest cities of each country ordered by altitude, in descending order' do
+      cities = parser.highest_cities_of_countries
+      expect(cities).to be_an(Array)
+      expect(cities.map(&:name)).to eq(countries_highest_cities)
     end
   end
 
